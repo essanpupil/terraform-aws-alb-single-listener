@@ -155,3 +155,9 @@ variable "cluster_role" {
   type        = "string"
   description = "Primary role/function of the cluster. Example value: 'app', 'fe', 'mongod', etc"
 }
+
+variable "access_logs_enabled" {
+  type = "string"
+  default = "true"
+  description = "Enable or disable ALB access log. Example value: 'true', 'false'"
+}
